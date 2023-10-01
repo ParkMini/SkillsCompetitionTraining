@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: gray;
+}
+
+html, body {
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Header 영역 */
+header {
+    border: solid 1px black; /* 영역 확인용 */
+    display: flex;
+    justify-content: space-around;
+    position: fixed; /* 상단에 고정시키기 */
+    width: 100%;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+
+header span {
+    background-color: red;
+    color: white;
+    margin: 5px 10px;
+    padding: 10px 100px;
+}
+
+header ul li {
+    list-style: none;
+    float: left;
+    padding: 15px 10px;
+    font-size: 18px;
+}
+
+/* Footer 영역 */
+footer {
+    border: solid 1px black; /* 영역 확인용 */
+    text-align: center;
+}
