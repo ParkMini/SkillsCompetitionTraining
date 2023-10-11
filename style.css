@@ -131,6 +131,15 @@ footer ul li {
   height: 550px;
 }
 
+/* 천안명소 영역 */
+#attraction {
+  text-align: center;
+}
+
+#attraction img {
+  border: solid 4px black;
+}
+
 /* 지도 영역 */
 #map {
   text-align: center;
