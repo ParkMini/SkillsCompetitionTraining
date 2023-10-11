@@ -1,88 +1,146 @@
+/* 공통 */
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  padding-top: 80px;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 a:hover {
-    color: gray;
+  color: gray;
 }
 
-html, body {
-    width: 100%;
-    margin-top: 30px;
+ul {
+  list-style-type: none;
 }
 
-/* Header 영역 */
+/* 헤더 */
 header {
-    border: solid 1px black; /* 영역 확인용 */
-    display: flex;
-    justify-content: space-around;
-    position: fixed; /* 상단에 고정시키기 */
-    width: 100%;
-    top: 0;
-    background-color: white;
-    z-index: 1000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  background-color: white;
+  position: fixed;
+  top: 0;
 }
 
-header span {
-    background-color: red;
-    color: white;
-    margin: 5px 10px;
-    padding: 10px 100px;
+header ul {
+  margin-top: 24px;
 }
 
 header ul li {
-    list-style: none;
-    float: left;
-    padding: 15px 10px;
-    font-size: 18px;
+  display: inline-block;
+  padding: 0 10px;
 }
 
-/* Footer 영역 */
+/* 푸터 */
 footer {
-    border: solid 1px black; /* 영역 확인용 */
-    text-align: center;
+  text-align: center;
+  background-color: lightgray;
+  padding: 30px 0px;
 }
 
+footer ul li {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  padding: 0 10px;
+}
+
+/* 모달 로딩 애니메이션 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 모달 */
 .modal {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: -50px;
-    width: 100%;
-    height: 110%;
-    background-color: rgba(0,0,0,0.4);
-    text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
 }
 
-.modal-content {
-    background-image: url("./assets/10.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-    margin: 15% auto;
-    padding: 20px;
-    width: 60%;
-    border-radius: 50px;
-    color: black;
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
 }
 
-
-.modal-content label {
-    font-size: 18px;
-    cursor: pointer;
-}
-
-/* input:checkbox로 모달 열기 */
-#modal-toggle {
-    display: none;
+.modal label {
+  font-size: 18px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: solid 1px black;
+  background-color: #606ddd;
+  color: white;
 }
 
 #modal-toggle:checked + .modal {
-    display: block;
+  visibility: visible;
+  animation: fadeIn 0.3s forwards;
+}
+
+/* 비주얼 영역 */
+#visual {
+  text-align: center;
+}
+
+#visual p {
+  margin-bottom: 50px;
+}
+
+/* 천안소개 영역 */
+#introduce {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#introduce a button {
+  border: solid 1px black;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+#introduce img:hover  {
+  width: 41%;
+  height: 550px;
+}
+
+/* 지도 영역 */
+#map {
+  text-align: center;
+}
+
+.changeKm {
+  font-size: 16px;
+  text-align: center;
+  background-color: lightblue;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: solid 1px black;
 }

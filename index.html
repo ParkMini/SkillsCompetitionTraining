@@ -1,44 +1,83 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <link rel="stylesheet" href="./style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>천안투어</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
-    <header>
-        <span><a href="#">로고</a></span>
-        <ul>
-            <li><a href="#">마이페이지</a></li>
-            <li><a href="#">명소 알아보기</a></li>
-            <li><a href="#">셔틀버스 투어</a></li>
-        </ul>
-        <ul>
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">회원가입</a></li>
-        </ul>
-    </header>
+  <!-- 헤더 시작 -->
+  <header>
+    <span><a href="#"><img src="./assets/logo.png" alt="로고" title="로고" width="200px" /></a></span>
+    <ul>
+      <li><a href="#">마이페이지</a></li>
+      <li><a href="#">명소 알아보기</a></li>
+      <li><a href="#">셔틀버스 투어</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">로그인</a></li>
+      <li><a href="#">회원가입</a></li>
+    </ul>
+  </header>
 
-    <input type="checkbox" id="modal-toggle" checked>
-    <div class="modal">
-        <div class="modal-content">
-            <h1>공지사항</h1>
-            <br>
-            <p>"고품격 문화도시 천안 관광 정보"<br>
-                천안8경과 축제, 구석구석 신나는 천안 나들이를 소개합니다.</p>
-            <br>
-            <label for="modal-toggle">닫기</label>
-        </div>
+  <!-- 모달 -->
+  <!-- checked 붙일 것 -->
+  <input type="checkbox" id="modal-toggle" style="display: none" />
+  <div class="modal">
+    <div class="content">
+      <h2>
+        "고품격 문화도시 천안 관광 정보"<br />
+        천안8경과 축제, 구석구석 신나는 천안 나들이를 소개합니다.
+      </h2>
+      <br />
+      <img src="./assets/1.jpg" alt="천안 사진 1" title="천안 사진 1" width="700px" height="400" />
+      <br />
+      <br />
+      <label for="modal-toggle">닫기</label>
     </div>
+  </div>
 
-    <footer>
-        <span><a href="#">로고</a></span>
-        <p>[Copyright]<br>
-            Copyrightⓒ Cheonan-Si. All rights reserved.<br>
-            Call: 1422-36<br>
-            Email: help@cheonan.tour<br>
-            Address: (31162) 충남 천안시 서북구 번영로 156</p>
-    </footer>
+  <!-- 비주얼 영역 -->
+  <div id="visual">
+    <p>
+      <i>A place of Enjoyment!<br />
+        you can experience excitement, inspiration and hamony through the
+        local festiveals!</i>
+    </p>
+    <img src="./assets/10.jpg" alt="천안 사진 10" title="천안 사진 10" width="800px" height="500px" />
+    <img src="./assets/9.jpg" alt="천안 사진 9" title="천안 사진 9" width="800px" height="500px" />
+  </div>
+
+  <!-- 천안소개 영역 -->
+  <div id="introduce">
+    <h1>천안을 소개합니다</h1><br>
+    <a href="#"><button>연인과 함께</button></a>
+    <a href="#"><button>가족과 함께</button></a>
+    <a href="#"><button>친구와 함께</button></a>
+    <a href="#"><button>역사 여행</button></a>
+    <br><br>
+    <img src="./assets/6.jpg" alt="천안소개 사진 1" title="천안소개 사진 1" width="40%" height="500">
+    <img src="./assets/8.jpg" alt="천안소개 사진 2" title="천안소개 사진 2" width="40%" height="500">
+  </div>
+
+  <!-- 푸터 시작 -->
+  <footer>
+    <ul>
+      <li>
+        <img src="./assets/logo.png" alt="로고" title="로고" width="200px" />
+      </li>
+      <li>
+        [Copyright]<br />
+        Copyrightⓒ Cheonan-Si. All rights reserved.<br />
+        Call: 1422-36<br />
+        Email: help@cheonan.tour<br />
+        Address: (31162) 충남 천안시 서북구 번영로 156
+      </li>
+    </ul>
+  </footer>
 </body>
+
 </html>
