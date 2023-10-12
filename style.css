@@ -78,7 +78,7 @@ footer ul li {
   visibility: hidden;
 }
 
-.content {
+.modal .content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -126,7 +126,7 @@ footer ul li {
   text-align: center;
 }
 
-#introduce img:hover  {
+#introduce img:hover {
   width: 41%;
   height: 550px;
 }
@@ -152,4 +152,44 @@ footer ul li {
   padding: 5px 10px;
   border-radius: 5px;
   border: solid 1px black;
+}
+
+#report {
+  width: 100%;
+  text-align: center;
+}
+
+.report_innerDiv {
+  padding: 5px;
+  width: 30%;
+  display: inline-block;
+}
+
+#report .post {
+  border: solid 1px black;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.post .title {
+  font-size: 24px;
+}
+
+#report .category {
+  font-size: 24px;
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+#report_1 button {
+  background-color: lightblue;
+}
+
+#report_2 button {
+  background-color: lightgreen;
+}
+
+#report_3 button {
+  background-color: lightcoral;
 }
