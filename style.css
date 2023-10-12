@@ -154,6 +154,7 @@ footer ul li {
   border: solid 1px black;
 }
 
+/* 여행리포트 영역 */
 #report {
   width: 100%;
   text-align: center;
@@ -193,3 +194,4 @@ footer ul li {
 #report_3 button {
   background-color: lightcoral;
 }
+
