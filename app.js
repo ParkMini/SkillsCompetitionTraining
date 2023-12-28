@@ -70,3 +70,5 @@ function handleClick(event) {
   undoButton.disabled = pointer === 0;
   redoButton.disabled = pointer >= resultArr.length - 1;
 }
+
+//승주 최고
